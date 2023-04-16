@@ -6,34 +6,17 @@
     android:layout_height="match_parent"
     android:background="#F3F3F3"
     android:backgroundTint="#FFFFFF"
-    tools:context=".MainActivity">
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="149dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="148dp"
-        android:layout_marginBottom="29dp"
-        android:text="Đăng nhập"
-        android:textColor="#000000"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/loginsdt"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Logo"
-        app:layout_constraintVertical_bias="1.0" />
+    tools:context=".SignupActivity">
 
     <EditText
-        android:id="@+id/loginpass"
+        android:id="@+id/loginpass2"
         android:layout_width="363dp"
         android:layout_height="50dp"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="77dp"
+        android:layout_marginBottom="44dp"
         android:ems="10"
-        android:hint="Mật khẩu"
+        android:hint="Nhập lại mật khẩu"
         android:inputType="text|textPassword"
         android:textColor="#000000"
         android:textColorHighlight="#000000"
@@ -41,13 +24,33 @@
         android:textColorLink="#000000"
         app:layout_constraintBottom_toTopOf="@+id/btbreturn"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginpass" />
+
+    <EditText
+        android:id="@+id/loginpass"
+        android:layout_width="363dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Mật khẩu"
+        android:inputType="text|textPassword"
+        android:textColor="#000000"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#000000"
+        android:textColorLink="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/loginpass2"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginsdt" />
 
     <ImageView
         android:id="@+id/Logo"
-        android:layout_width="100dp"
-        android:layout_height="167dp"
+        android:layout_width="112dp"
+        android:layout_height="155dp"
         android:layout_marginStart="151dp"
         android:layout_marginTop="34dp"
         android:layout_marginEnd="152dp"
@@ -56,7 +59,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo"/>
+        app:srcCompat="@drawable/logo" />
 
     <EditText
         android:id="@+id/loginsdt"
@@ -64,7 +67,7 @@
         android:layout_height="50dp"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="29dp"
+        android:layout_marginBottom="10dp"
         android:ems="10"
         android:hint="Số Điện Thoại"
         android:inputType="number"
@@ -79,24 +82,24 @@
 
     <Button
         android:id="@+id/btbreturn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="77dp"
-        android:layout_marginEnd="160dp"
-        android:text="Đăng nhập"
+        android:layout_width="133dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="137dp"
+        android:text="Trở về"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginpass" />
+        app:layout_constraintStart_toEndOf="@+id/btntaotai"
+        app:layout_constraintTop_toBottomOf="@+id/loginpass2" />
 
     <Button
         android:id="@+id/btntaotai"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="138dp"
-        android:layout_marginTop="113dp"
-        android:layout_marginEnd="139dp"
-        android:layout_marginBottom="4dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="137dp"
         android:shadowColor="#DAD8D8"
         android:text="Tạo tài khoản"
         android:textColor="#FFFFFF"
@@ -104,8 +107,23 @@
         android:textColorHint="#000000"
         android:textColorLink="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btbreturn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginpass2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="163dp"
+        android:layout_marginBottom="29dp"
+        android:text="Đăng ký"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/loginsdt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btbreturn" />
-
+        app:layout_constraintTop_toBottomOf="@+id/Logo" />
 </androidx.constraintlayout.widget.ConstraintLayout>
