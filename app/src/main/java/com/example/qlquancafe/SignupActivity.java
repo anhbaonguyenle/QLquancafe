@@ -27,7 +27,7 @@ public class SignupActivity extends AppCompatActivity {
         tao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String usersdt = String.valueOf(sdt);
+                String usersdt = sdt.getText().toString();
                 String userpass = pass1.getText().toString();
                 String userpass2 = pass2.getText().toString();
                 if (usersdt.equals("") || userpass.equals("") || userpass2.equals("")) {
@@ -35,7 +35,7 @@ public class SignupActivity extends AppCompatActivity {
                 } else if (!userpass.equals(userpass2)) {
                     Toast.makeText(getApplicationContext(), "Mật khẩu nhập lại không khớp", Toast.LENGTH_SHORT).show();
                 } else {
-                    Boolean checksdt = DB.checksdt(usersdt);
+                    Boolean checksdt = DB.checkSdtExists(usersdt);
                     if(checksdt==false){
                         Boolean insert = DB.insertData(usersdt,userpass);
                         if (insert) {

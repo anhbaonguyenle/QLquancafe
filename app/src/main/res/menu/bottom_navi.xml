@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ban"
+        android:title="@string/ban"
+        android:icon="@drawable/table_icon"
+        />
+    <item
+        android:id="@+id/thucdon"
+        android:title="@string/thucdon"
+        android:icon="@drawable/menu_icon"
+        />
+    <item
+        android:id="@+id/tinhtrang"
+        android:title="@string/tinhtrang"
+        android:icon="@drawable/status_icon"
+        />
+    <item
+        android:id="@+id/hoadon"
+        android:title="@string/hoadon"
+        android:icon="@drawable/bill_icon"
+        />
+</menu>

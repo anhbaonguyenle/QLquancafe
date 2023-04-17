@@ -26,13 +26,13 @@ public class MainActivity extends AppCompatActivity {
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String usersdt = String.valueOf(editsdt);
+                String usersdt = editsdt.getText().toString();
                 String userpass = editmatkau.getText().toString();
                 if (usersdt.equals("") || userpass.equals("")) {
                     Toast.makeText(getApplicationContext(), "Hãy điền đầy đủ thông tin", Toast.LENGTH_SHORT).show();
                 }
                 else {
-                    Boolean checkuserpass = DB.checkusernamepassword(usersdt, userpass);
+                    Boolean checkuserpass = DB.checkPassword(usersdt, userpass);
                     if(checkuserpass==true){
                         Toast.makeText(MainActivity.this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
                         Intent intent  = new Intent(getApplicationContext(), Home.class);

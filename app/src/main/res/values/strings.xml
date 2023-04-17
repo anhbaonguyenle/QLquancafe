@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">QLquancafe</string>
+    <string name="ban">Bàn</string>
+    <string name="thucdon">Menu</string>
+    <string name="tinhtrang">Tình trạng</string>
+    <string name="hoadon">Hóa đơn</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
